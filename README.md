@@ -32,4 +32,4 @@ Detection For each frame: Detect faces with a Haar cascade, DNN, or another face
 
 # Output
 [<img src="output_preview/output_sample.png" alt="Actual Output" width="600" height="300"/>](output_preview/output_sample.png)
-[<img src="iutput_preview/output_sample_2.png" alt="Actual Output" width="600" height="300"/>](output_preview/output_sample_2.png)
+[<img src="uutput_preview/output_sample_2.png" alt="Actual Output" width="600" height="300"/>](output_preview/output_sample_2.png)
