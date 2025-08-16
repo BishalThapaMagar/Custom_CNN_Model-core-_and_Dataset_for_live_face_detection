@@ -1,4 +1,4 @@
-# Custom_CNN_Model-core-_and_Dataset_for_live_face_detection
+# Custom CNN Model (Core) and_Dataset for live face detection
 
 This project contains a custom excel dataset taken from my own mobile categorizing myself and rest of people which is fed to a custom CNN deep neural network to recognize. This trained CNN model is then used to detect my face in realtime.
 
@@ -12,12 +12,7 @@ Collection: Images are stored in folders (bishal, unknown) and each image of siz
 
 Labeling: Code assigns labels by checking keywords in the filenames ("bishal", "unknown").
 
-Processing:
-Images are converted to greyscale.
-
-Pixel values are flattened and appended with the label.
-
-Data is optionally saved to a CSV for convenient loading.
+Processing: Images are converted to greyscale. Pixel values are flattened and appended with the label. Data is optionally saved to a CSV for convenient loading.
 
 # Train a CNN to Recognize Your Face
 
@@ -27,9 +22,7 @@ CNN with Two convolutional layers (Conv2d), followed by pooling, Fully connected
 Data Loader: PyTorch Dataset to load and preprocess images from your CSV, converting them to tensors and normalizing (/255.0).
 
 # Training process:
-The code splits data into train and test sets, builds DataLoaders, and trains the model using binary cross-entropy loss.
-
-The displayed tensors during training confirm that your data pipeline works and data normalization is applied.
+The code splits data into train and test sets, builds DataLoaders, and trains the model using binary cross-entropy loss. The displayed tensors during training confirm that your data pipeline works and data normalization is applied.
 
 # Running Camera and Detect Your Face in Real Time
 
@@ -37,8 +30,4 @@ Capture: Use OpenCV: cv2.VideoCapture(0) to open the webcam.
 
 Detection For each frame: Detect faces with a Haar cascade, DNN, or another face detector. Extract and resize the detected face to the input size expected by the CNN (54x40). Convert to greyscale (if not already), normalize, and turn into a tensor. Pass the tensor through your trained CNN. If output > 0.75, classify as "bishal"; else "unknown"
 
-Sample detection loop outline using OpenCV and PyTorch:
-
-Output
-cv2.destroyAllWindows()
-Replace detect_faces_somehow with an actual detector (like cv2.CascadeClassifier or preferably a DNN-based face detector for more reliability).
+# Output
