@@ -31,5 +31,5 @@ Capture: Use OpenCV: cv2.VideoCapture(0) to open the webcam.
 Detection For each frame: Detect faces with a Haar cascade, DNN, or another face detector. Extract and resize the detected face to the input size expected by the CNN (54x40). Convert to greyscale (if not already), normalize, and turn into a tensor. Pass the tensor through your trained CNN. If output > 0.75, classify as "bishal"; else "unknown"
 
 # Output
-[<img src="output_preview/output_sample.png" alt="Actual Output" width="200" height="100"/>](output_preview/output_sample.png)
+![<img src="output_preview/output_sample.png" alt="Actual Output" width="600" height="300"/>](output_preview/output_sample.png)
 ![<img src="iutput_preview/output_sample_2.png" alt="Actual Output" width="200" height="100"/>](output_preview/output_sample_2.png)
