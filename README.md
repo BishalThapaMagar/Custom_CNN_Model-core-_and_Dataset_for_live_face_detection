@@ -28,7 +28,7 @@ The code splits data into train and test sets, builds DataLoaders, and trains th
 
 Capture: Use OpenCV: cv2.VideoCapture(0) to open the webcam.
 
-Detection For each frame: Detect faces with a Haar cascade, DNN, or another face detector. Extract and resize the detected face to the input size expected by the CNN (54x40). Convert to greyscale (if not already), normalize, and turn into a tensor. Pass the tensor through your trained CNN. If output > 0.75, classify as "bishal"; else "unknown"
+Detection For each frame: Detect faces with a Haar cascade. Extract and resize the detected face to the input size expected by the CNN (54x40). Convert to greyscale (if not already), normalize, and turn into a tensor. Pass the tensor through your trained CNN. If output > 0.75, classify as "bishal"; else "unknown"
 
 # Output
 [<img src="output_preview/output_sample.png" alt="Actual Output" width="500" height="350"/>](output_preview/output_sample.png)
